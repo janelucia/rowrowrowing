@@ -1,11 +1,4 @@
 {
-  "extends": "astro/tsconfigs/base",
-  "compilerOptions": {
-    "types": ["astro/client"],
-    "allowJs": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["src/*"]
-    }
-  }
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json"
 }
