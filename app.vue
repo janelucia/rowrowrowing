@@ -2,20 +2,42 @@
   <div data-theme="night">
     <header>
       <div
-        class="min-h-screen hero"
-        style="background-image: url('/images/skulls.JPG')"
+        class="relative flex items-center justify-center w-screen min-h-screen overflow-hidden"
       >
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="text-center hero-content text-neutral-content">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">
-              Willkommen beim Uni Rudern Kiel
-            </h1>
-            <p class="mb-5">
-              Entdecke die Faszination des Ruderns an und auf der Förde
-            </p>
-            <button class="btn btn-primary">Zum Hochschulsport</button>
-          </div>
+        <div class="absolute inset-0 h-full overflow-hidden">
+          <NuxtPicture
+            src="/images/skulls.JPG"
+            class="object-cover w-full h-full"
+            :img-attrs="{ class: 'w-full h-full object-cover' }"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-neutral-content"
+        >
+          <h1 class="mb-5 text-5xl font-bold">
+            Willkommen beim Uni Rudern Kiel
+          </h1>
+          <p class="mb-5">
+            Entdecke die Faszination des Ruderns an und auf der Förde
+          </p>
+          <button class="btn btn-primary">Zum Hochschulsport</button>
+        </div>
+        <div class="absolute bottom-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="white"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
         </div>
       </div>
     </header>
